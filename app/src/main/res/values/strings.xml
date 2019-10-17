@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dice Roller!</string>
+    <string name="random_number_generator">Random Number Generator</string>
+</resources>
