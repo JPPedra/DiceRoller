@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Dice Roller!</string>
     <string name="random_number_generator">Random Number Generator</string>
+    <string name="inputnumber">InputNumber</string>
+    <string name="numberinput">NumberInput:</string>
+    <string name="textview">TextView</string>
+    <string name="roll_the_dice">Roll The Dice</string>
 </resources>

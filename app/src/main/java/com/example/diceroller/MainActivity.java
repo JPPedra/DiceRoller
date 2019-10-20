@@ -2,11 +2,14 @@ package com.example.diceroller;
 
         import androidx.appcompat.app.AppCompatActivity;
 
+        import android.annotation.SuppressLint;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.TextView;
 
+
         import java.util.Random;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
+    @SuppressLint("SetTextI18n")
     public void buttonclick(View view){
 
         TextView tv = this.findViewById(R.id.numberTextView);
@@ -25,9 +28,6 @@ public class MainActivity extends AppCompatActivity {
         int number = r.nextInt(6);
 
         tv.setText(Integer.toString(number));
-
-
-
 
     }
 }
