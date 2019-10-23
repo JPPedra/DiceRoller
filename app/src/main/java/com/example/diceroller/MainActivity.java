@@ -9,7 +9,7 @@ package com.example.diceroller;
 
 
 public class MainActivity extends AppCompatActivity {
-
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonclick(View view) {
+
+        TextView tv1 = this.findViewById(R.id.userpoints);
+
+        tv1.setText(Integer.toString(count));
 
         try{
 
@@ -32,13 +36,14 @@ public class MainActivity extends AppCompatActivity {
         TextView textView00 = this.findViewById(R.id.textView00);
 
 
-
       String puta = insertnumber.getText().toString();
       int insertnumber1 = Integer.parseInt(puta);
 
 
+
         if (number == insertnumber1) {
             textView00.setText("Congrats");
+            count++;
         }
         else{
             textView00.setText("Try Again");
