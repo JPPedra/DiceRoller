@@ -1,13 +1,10 @@
 package com.example.diceroller;
 
         import androidx.appcompat.app.AppCompatActivity;
-
-        import android.annotation.SuppressLint;
         import android.os.Bundle;
         import android.view.View;
+        import android.widget.EditText;
         import android.widget.TextView;
-
-
         import java.util.Random;
 
 
@@ -19,15 +16,35 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @SuppressLint("SetTextI18n")
-    public void buttonclick(View view){
+    public void buttonclick(View view) {
+
+        try{
 
         TextView tv = this.findViewById(R.id.numberTextView);
-
         Random r = new Random();
         int number = r.nextInt(6);
 
+
         tv.setText(Integer.toString(number));
 
+        EditText insertnumber = this.findViewById(R.id.insertnumber);
+
+        TextView textView00 = this.findViewById(R.id.textView00);
+
+
+
+      String puta = insertnumber.getText().toString();
+      int insertnumber1 = Integer.parseInt(puta);
+
+
+        if (number == insertnumber1) {
+            textView00.setText("Congrats");
+        }
+        else{
+            textView00.setText("Try Again");
+        }
+    } catch (Exception e) {
+        }
+        }
+
     }
-}
