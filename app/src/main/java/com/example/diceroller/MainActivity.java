@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             count++;
         }
         else{
-            textView00.setText("Try Again");
+            textView00.setText("Please Try Again");
         }
     } catch (Exception e) {
         }
