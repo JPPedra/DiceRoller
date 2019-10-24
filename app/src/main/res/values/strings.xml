@@ -7,4 +7,6 @@
     <string name="roll_the_dice">Roll The Dice</string>
     <string name="result">Result:</string>
     <string name="points">Points:</string>
+    <string name="i_am_feeling_lucky">I am feeling lucky</string>
+    <string name="message">Message:</string>
 </resources>
